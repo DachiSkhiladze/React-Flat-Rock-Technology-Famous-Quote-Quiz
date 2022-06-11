@@ -1,38 +1,233 @@
-.App {
+body {
   text-align: center;
+  background-color:whitesmoke;
+}
+ 
+.label{
+  display: block;
+  font-size: larger;
+  color: black;
+  padding: 5px;
+}
+ 
+.HeaderContainer li{
+  width: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.HeaderContainer li button{
+  width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input{
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.insertBtn{
+  width: 300px;
+  border: none;
+  border-radius: 2px;
+  margin: 0px 10px;
+  padding: 10px;
+  color: white !important;
+  background-color: #ff0033;
+  cursor: pointer;
+}
+
+.insertBtn a{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+  width: 100px;
+  color: white;
+  background-color: #ff0033;
+  border-radius: 5px;
+  font-size: larger;
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+  border: none;
+  transition: 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover{
+  color: #ff0033;
+  background-color: white;
+  cursor: pointer;
 }
+ 
+.messages{
+  display: flex;
+  justify-content: center;
+}
+ 
+.success{
+  display: block;
+  color: black;
+  width: fit-content;
+  height: 50px;
+  font: 50px;
+  padding: 5px;
+}
+
+.error{
+  color: #ff0033;
+  font-size: 20px;
+}
+
+li{
+  display: inline;
+  width: 100px;
+  float: left;
+}
+
+ul{
+  width: max-content;
+  height: 100%;
+  margin: auto;
+}
+
+.Header{
+  width: 100%;
+  height: 120px;
+}
+
+
+.HeaderContainer li button{
+  background-color: aliceblue;
+  text-decoration: none;
+  border-radius: 0px;
+}
+
+.HeaderContainer li button a{
+  color: black;
+  text-decoration: none;
+}
+
+.HeaderContainer li button:hover{
+  background-color: brown;
+}
+
+.MultipleChoiceButton{
+  background-color: #ff0033;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 400 !important;
+  color: #fff;
+  padding: 23px 50px;
+  margin: auto;
+  text-align: center;
+  display: block !important;
+  text-decoration: none;
+  border: 0px;
+  width: 30%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s 0s ease-in-out;
+}
+
+.MultipleChoiceButton:hover {
+  transform: scale(1.04, 1);
+  background-color: rgb(216, 10, 27);
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;;
+}
+
+.BinaryQuestionButton{
+  background-color: #ff0033;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 400 !important;
+  color: #fff;
+  padding: 23px 50px;
+  margin: auto;
+  margin: 10px 5px;
+  text-align: center;
+  display: inline-block !important;
+  text-decoration: none;
+  border: 0px;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s 0s ease-in-out;
+}
+
+.BinaryQuestionButton:hover {
+  transform: scale(1.04, 1);
+  background-color: rgb(216, 10, 27);
+  text-decoration: none;
+}
+
+.Result{
+  width: 70%px;
+  height: 200px;
+  margin: auto;
+}
+
+.Result h1{
+  color: #ff0033;
+  font-size: 20px;
+}
+
+li button{
+  color: black !important;
+}
+
+.userLine{
+  width: 70%;
+  height: 50px;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.userLine:hover{
+  border: 2px solid red;
+}
+
+.userLine input{
+  display: block;
+  height: 100%;
+  border: none;
+  width: 40%;
+  text-align: left;
+  font-size: 20px;
+  float: left;
+}
+
+.userLine button{
+  height: 50px;
+  display: block;
+  width: 100px;
+  float: right;
+  margin: 0px 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 1s;
+}
+
+.userLine button:hover{
+  background-color: red;
+}
+
+.DisableUser, .DeleteUser{
+  background-color: red !important;
+}
+
+.UpdateUser{
+  background-color: darkgoldenrod !important;
+}
+
+.GetData:hover{
+  background-color: darkgreen !important;
+}
+
